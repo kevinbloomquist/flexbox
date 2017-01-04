@@ -52,9 +52,7 @@ Here, our unordered list "flex-container" is holding a collection of list items 
 Let's write some HTML we can come back to and use to visualize what we're talking about.
 
 1. Create an new directory called flexbox-model-work
-
 2. Create html page called index.html with an externally linked css stylesheet called main.css
-
 3. Inside your html page create a "flex-container" ul holding six list items within, with each next node numbered.
 
 Your HTML should look something like this:
