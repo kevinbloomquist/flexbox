@@ -47,7 +47,7 @@ By default, the CSS Box Model allows you to control your child elements as a lis
 
 Here, our unordered list "flex-container" is holding a collection of list items we'd like to arrange. From here, there's a number of CSS properties that we can apply to either our container or our children.
 
-##Box Model Demo 
+## Box Model Demo 
 
 Let's write some HTML we can come back to and use to visualize what we're talking about.
 
@@ -122,21 +122,108 @@ Flex-direction determines how our child elements will lay out inside their paren
 - **column**: top to bottom
 - **column-reverse**: bottom to top
 
+Set .flex-container to be flex-direction: row.
 
+### Flex-Wrap
 
+By default, children in your Flexbox layout will all try to fit on one line. You can also tell items to wrap, or wrap in reverse order:
 
+```css
+.flex-container {
+	flex-wrap: wrap;
+}
+```
+- **nowrap (default)**: single-line, left to right
+- **wrap**: multi-line, left to right 
+- **wrap-reverse**: multi-line, right to left
 
+Set our .flex-container to be flex-wrap: wrap.
 
+### Properties of the Children
 
+Next, let's take a look at the CSS calls we can use to arrange our child elements:
 
+### Order
 
+Just like the CSS Box Model, our child elements are laid out in the order the DOM receives them. But unlike the CSS Box Model, we can change that order with CSS:
 
+```css
+#child-1 {
+	order: 3;
+}
+```
 
+By default, all children are order: 1; when multiple items have the same order number, they're called in the order the DOM receives them. Since the order property is unit-less and the values can be stacked, we can use the order property arrange properties into sets, completely reorder them, and any sequence inbetween. The above CSS arranges our first child element to actually appear third - appearing at the end of any elements with a 1 or 2 value, but before elements with an order value higher than 3.
 
+Let's take minute to rearrange the order of our child elements:
 
+- Make #child-1 have an order value of 3.
+- Make #child-2 have an order value of 2.
+- Make #child-3 have an order value of 1.
+- Leave the other children in the order the DOM recieves them in.
 
+Open your index.html file in Chrome - notice how the elements now appear out of order? Or rather, in the order we told them to? This is the magic of Flexbox!
 
+### Flex-Grow
 
+If we want certain elements to take up a larger amount of space than another, we can achieve this with flex-grow:
+
+```css
+ #child-1 {
+  flex-grow: 2;
+}
+```
+
+Like Order, Flex-Grow is unit-less - meaning that flex-grow: 2 will make #child-1 twice as large as all other elements. Once again, the default value is 1. 
+
+Take a minute to resize our child elements:
+
+- Make #child-1 have a flex-grow value of 2.
+- Make #child-3 have an flex-grow value of 3.
+- Leave the other children at their default size.
+
+Refresh index.html and see how our elements fill the page now - they strech to fill their container, while maintining a consistent size!
+
+### Responsive Flexibility
+
+Grab your browser window by the corner, and squish your screen (or use the mobile/responsive emulator in the Chrome Dev Tools) until it's roughly the size of an iPad, or smartphone - see how the boxes squish proportionally as the screen becomes smaller? What happens when the screen get too small to display all of the boxes on a single line? Can you remember what property is responsible for that action?
+
+## Living Box Model - Round 2
+
+Now that we've learned two different layout models, let's combine them!
+In our last lesson, half the class was handed a pad of post its to write CSS properties on, and the other half had to act them out. This time, we'll have two stacks of post-its - yellow for CSS Box Model, and blue for Flexbox Model. Please perform whatever role you didn't perform last round.
+
+## Column Flow - Paired Practice 
+
+In your career as a web developer, you'll almost always be asked to work with large datasets. As you gain the skills to sort and classify these data points behind the scenes with tools like Javascript, you'll also need to know how to show users these datasets in ways that are both meaningful and familiar to them. This often comes in the form of building layouts based on websites your clients are familiar with, or are widely popular.
+One such example is Pinterest, which did a lot to kick-off the wide-spread adoption of column-based, endless scrolling, tiled-based layouts:
+
+[Pinterest](https://www.pinterest.com/)
+
+This type of layout might have been intimidating only a few minutes ago - but now that we know flexbox, you might have a better idea of how to arrange this layout.
+
+Clone the repo labeled "PinterestPractice" - inside, you'll find an HTML file with an assortment of cat photos inside. You'll also see a blank CSS file attached - work with a partner to recreate the layout you see on Pinterest.com.
+
+Things to consider:
+
+1. What can you do to make sure that the Flexbox children fill the full width and height of a row, but don't stretch the images?
+2. What Flexbox properties can you use to adjust for gaps caused by the differently-shaped pictures? 
+3. How does your grid look at different screen sizes? Is it responsive? If not, what can you do to make sure it is?
+
+##### Bonus:
+4. Check out Mozilla's overview of the [Flexbox Model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes)
+In the left menu, under Properties, you'll see a full list of Flexbox CSS properties. See if any ones we haven't touched on yet can help you build a better grid.
+
+You'll be given 20 minutes to create your best Pinterest Grid, after which each pair will showcase their prototype, and the style rules they used to achieve it.
+
+## Conclusion
+
+So now we have two different ways of laying out content on our sites - they can be used separately or combined in order to achieve the kind of pages we want.
+
+1. How are children treated differently in the Flexbox Model? What are few abilities they gain?
+2. What are some of the Flexbox properties? What's the bare minimum amount of properties you can use to still have a Flexbox layout?
+3. How would adding clears and floats affect your Flexbox layout?
+4. What kind of situation might be a bad fit for using the Flexbox Model?
 
 
 
