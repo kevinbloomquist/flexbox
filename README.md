@@ -90,6 +90,57 @@ ul li {
 	border: 1px solid #000;
 }
 ```
+## The Flexbox Model and its components
+
+As we've discussed, the Flexbox Model has two main components - the parent element, and the children. Let's break down the Flexbox properties based on which object they're meant for:
+
+### Properties of the Parent
+First, let's take a look at the CSS calls we can use to shape the parent container:
+
+#### Display
+This one should be familiar - only the value of the property is new:
+```css
+.flex-container {
+	display: flex;
+}
+```
+This call denotes that our parent - and everything inside it - will be using the Flexbox Model. Just declaring this is enough to turn our layout into a very basic Flexbox layout - but probably not with any of the customization we want. This call has to be made before any of the following Flexbox properties can be used. 
+*Note - display: flex gives your element Flexbox properties, but will allow it to be treated as a block-level element by all the other elements it share the page with. If you'd like your parent element to mimic the display properties of an inline element, use display:inline-flex. 
+
+Go ahead and add display: flex; to our flex-container.
+
+#### Flex-Direction
+Flex-direction determines how our child elements will lay out inside their parent:
+
+```css
+.flex-container {
+	flex-direction: row;
+}
+```
+- **row (default)**: left to right 
+- **row-reverse**: right to left
+- **column**: top to bottom
+- **column-reverse**: bottom to top
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
