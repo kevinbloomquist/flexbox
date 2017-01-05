@@ -158,11 +158,11 @@ Just like the CSS Box Model, our child elements are laid out in the order the DO
 
 ```css
 #child-1 {
-	order: 3;
+	order: 2;
 }
 ```
 
-By default, all children are order: 1; when multiple items have the same order number, they're called in the order the DOM receives them. Since the order property is unit-less and the values can be stacked, we can use the order property arrange properties into sets, completely reorder them, and any sequence inbetween. The above CSS arranges our first child element to actually appear third - appearing at the end of any elements with a 1 or 2 value, but before elements with an order value higher than 3.
+By default, all children are `order: 1`. When multiple items have the same order number, they're called in the order the DOM receives them. Since the order property is unit-less and the values can be stacked, we can use the order property arrange properties into sets, completely reorder them, and any sequence inbetween. The above CSS arranges our first child element to actually appear at the end of the list - after any elements with a default 1 value, but before elements with an order value higher than 2.
 
 Let's take minute to rearrange the order of our child elements:
 
@@ -172,6 +172,8 @@ Let's take minute to rearrange the order of our child elements:
 - Leave the other children in the order the DOM recieves them in.
 
 Open your `index.html` file in Chrome - notice how the elements now appear out of order? Or rather, in the order we told them to? This is the magic of Flexbox!
+
+![magic](gifs/magic.gif)
 
 ### Flex-Grow
 
