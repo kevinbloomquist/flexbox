@@ -218,25 +218,27 @@ One such example is Pinterest, which did a lot to kick-off the wide-spread adopt
 
 This type of layout might have been intimidating only a few minutes ago - but now that we know flexbox, you might have a better idea of how to arrange this layout.
 
-Clone the repo labeled "PinterestPractice" - inside, you'll find an HTML file with an assortment of cat photos inside. You'll also see a blank CSS file attached - work with a partner to recreate the layout you see on Pinterest.com.
+Open the folder called pinterestPractice - inside, you'll find an HTML file populated with an assortment of cat photos. You'll also see a blank CSS file attached - work with a partner to recreate the layout you see on Pinterest.com.
 
 Things to consider:
 
 1. What can you do to make sure that the Flexbox children fill the full width and height of a row, but don't stretch the images?
-2. What Flexbox properties can you use to adjust for gaps caused by the differently-shaped pictures? 
+2. What Flexbox properties can you use to adjust for gaps caused by the differently-shaped pictures? Hint- there's a pattern to the image sizes. 
 3. How does your grid look at different screen sizes? Is it responsive? If not, what can you do to make sure it is?
 
 ##### Bonus:
 4. Check out Mozilla's overview of the [Flexbox Model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes)
 In the left menu, under Properties, you'll see a full list of Flexbox CSS properties. See if any ones we haven't touched on yet can help you build a better grid.
 
-You'll be given 20 minutes to create your best Pinterest Grid, after which each pair will showcase their prototype, and the style rules they used to achieve it.
+You'll be given the remainder of class to create your best Pinterest Grid, after which each pair will showcase their prototype, and the style rules they used to achieve it.
 
 ## Conclusion
 
 So now we have two different ways of laying out content on our sites - they can be used separately or combined in order to achieve the kind of pages we want.
 
 ![Room for Activities](gifs/activities.gif)
+
+To recap:
 
 1. How are children treated differently in the Flexbox Model? What are few abilities they gain?
 2. What are some of the Flexbox properties? What's the bare minimum amount of properties you can use to still have a Flexbox layout?
