@@ -14,8 +14,24 @@ After this lesson, students will be able to:
 - Use the chrome console
 - Use the CSS box model to create simple layouts
 
+## Living Box Model - Round 1
+
+Before we start in on Flexbox, let's recap the CSS box model. It's main properties are:
+
+- Display
+- Float
+- Clear
+- Position
+- Margin
+- Padding*
+- Border*
+
+To make sure we still remember these, we're going to act them out. Half of the class will get a pad of post-its to write CSS properties on, and the other half has to act them out.
+> * These might be hard to act out. Let's stick with the first 5 properties.
+If you have post-its, take two of them and write one CSS property/value on each. Hand each of your two post-its to a different person.
+
 ## Why Flexbox?
-So by now pretty much everyone is familiar with the CSS box model. But perhaps while constructing your last page layout, you noticed some of the flaws in the available tools - clearing and floating alone is enough of a headache to modern developers that many people working in the field have trouble describing how it works.
+So by now (hopefully) everyone is familiar with the CSS box model. But perhaps while constructing your last page layout, you noticed some of the flaws in the available tools - clearing and floating alone is enough of a headache to modern developers that many people working in the field have trouble describing how it works.
 
 That's one reason why the Flexbox Model was created - its a more logical layout model that was added to the CSS3 spec in order to streamline page structuring, using CSS properties that match more common layout needs.
 
@@ -107,7 +123,7 @@ This one should be familiar - only the value of the property is new:
 This call denotes that our parent - and everything inside it - will be using the Flexbox Model. Just declaring this is enough to turn our layout into a very basic Flexbox layout - but probably not with any of the customization we want. This call has to be made before any of the following Flexbox properties can be used. 
 > Note - `display: flex` gives your element Flexbox properties, but will allow it to be treated as a block-level element by all the other elements it share the page with. If you'd like your parent element to mimic the display properties of an inline element, use `display: inline-flex`. 
 
-Go ahead and add display: flex; to our flex-container.
+Go ahead and add `display: flex;` to our `.flex-container`.
 
 #### Flex-Direction
 Flex-direction determines how our child elements will lay out inside their parent:
@@ -122,7 +138,7 @@ Flex-direction determines how our child elements will lay out inside their paren
 - **column**: top to bottom
 - **column-reverse**: bottom to top
 
-Set .flex-container to be flex-direction: row.
+Set `.flex-container` to be `flex-direction: row`.
 
 ### Flex-Wrap
 
@@ -137,7 +153,7 @@ By default, children in your Flexbox layout will all try to fit on one line. You
 - **wrap**: multi-line, left to right 
 - **wrap-reverse**: multi-line, right to left
 
-Set our .flex-container to be flex-wrap: wrap.
+Set our `.flex-container` to be `flex-wrap: wrap`.
 
 ### Properties of the Children
 
@@ -157,12 +173,12 @@ By default, all children are order: 1; when multiple items have the same order n
 
 Let's take minute to rearrange the order of our child elements:
 
-- Make #child-1 have an order value of 3.
-- Make #child-2 have an order value of 2.
-- Make #child-3 have an order value of 1.
+- Make `#child-1` have an order value of 3.
+- Make `#child-2` have an order value of 2.
+- Make `#child-3` have an order value of 1.
 - Leave the other children in the order the DOM recieves them in.
 
-Open your index.html file in Chrome - notice how the elements now appear out of order? Or rather, in the order we told them to? This is the magic of Flexbox!
+Open your `index.html` file in Chrome - notice how the elements now appear out of order? Or rather, in the order we told them to? This is the magic of Flexbox!
 
 ### Flex-Grow
 
@@ -174,15 +190,15 @@ If we want certain elements to take up a larger amount of space than another, we
 }
 ```
 
-Like Order, Flex-Grow is unit-less - meaning that flex-grow: 2 will make #child-1 twice as large as all other elements. Once again, the default value is 1. 
+Like Order, `flex-grow` is unit-less - meaning that `flex-grow: 2` will make `#child-1` twice as large as all other elements. Once again, the default value is 1. 
 
 Take a minute to resize our child elements:
 
-- Make #child-1 have a flex-grow value of 2.
-- Make #child-3 have an flex-grow value of 3.
+- Make `#child-1` have a `flex-grow` value of 2.
+- Make `#child-3` have an `flex-grow` value of 3.
 - Leave the other children at their default size.
 
-Refresh index.html and see how our elements fill the page now - they strech to fill their container, while maintining a consistent size!
+Refresh `index.html` and see how our elements fill the page now - they strech to fill their container, while maintining a consistent size!
 
 ### Responsive Flexibility
 
