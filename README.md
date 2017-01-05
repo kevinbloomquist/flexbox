@@ -19,7 +19,7 @@ So by now pretty much everyone is familiar with the CSS box model. But perhaps w
 
 That's one reason why the Flexbox Model was created - its a more logical layout model that was added to the CSS3 spec in order to streamline page structuring, using CSS properties that match more common layout needs.
 
-Flexbox is so new that it doesn't yet have full browser support, but that's no reason why we shouldn't learn it - within the next year, as IE11 support comes to an end, it will start to replace the CSS box model as the dominant tool for page structure - and we can arrive there already understanding it!
+Flexbox is so new that [it doesn't yet have full browser support](http://caniuse.com/#search=flexbox), but that's no reason why we shouldn't learn it - within the next year, as IE11 support comes to an end, it will start to replace the CSS box model as the dominant tool for page structure - and we can arrive there already understanding it!
 
 ## An Intro to The Flexbox Model
 The Flexbox Model is a series of CSS rules that affect the two main components of a web layout - the parent container, and the child elements. This is a structure we're already familiar with from past lessons - a block-level element is created as a "container", and holds inside of it a list of smaller elements:
@@ -40,10 +40,10 @@ By default, the CSS Box Model allows you to control your child elements as a lis
 
 - **main axis** - The main axis of a flex container is the primary axis along which flex items are laid out.
 - **main-start | main-end** - The flex items are placed within the container starting from main-start and going to main-end.
-- **main size** - A flex item's width or height, whichever is in the main dimension, is the item's main size. The flex item's main size property is either the ‘width’ or ‘height’ property, whichever is in the main dimension.
-- **cross axis** - The axis perpendicular to the main axis is called the cross axis. Its direction depends on the main axis direction.
+- **main size** - The full width of the main axis.
+- **cross axis** - The axis perpendicular to the main axis. 
 - **cross-start | cross-end** - Flex lines are filled with items and placed into the container starting on the cross-start side of the flex container and going toward the cross-end side.
-- **cross size** - The width or height of a flex item, whichever is in the cross dimension, is the item's cross size. The cross size property is whichever of ‘width’ or ‘height’ that is in the cross dimension.
+- **cross size** - The full height of the cross axis.
 
 Here, our unordered list "flex-container" is holding a collection of list items we'd like to arrange. From here, there's a number of CSS properties that we can apply to either our container or our children.
 
@@ -51,7 +51,7 @@ Here, our unordered list "flex-container" is holding a collection of list items 
 
 Let's write some HTML we can come back to and use to visualize what we're talking about.
 
-1. Create an new directory called flexbox-model-work
+1. Create an new directory called flexbox-practice (or fork this repo)
 2. Create html page called index.html with an externally linked css stylesheet called main.css
 3. Inside your html page create a "flex-container" ul holding six list items within, with each next node numbered.
 
@@ -105,7 +105,7 @@ This one should be familiar - only the value of the property is new:
 }
 ```
 This call denotes that our parent - and everything inside it - will be using the Flexbox Model. Just declaring this is enough to turn our layout into a very basic Flexbox layout - but probably not with any of the customization we want. This call has to be made before any of the following Flexbox properties can be used. 
-*Note - display: flex gives your element Flexbox properties, but will allow it to be treated as a block-level element by all the other elements it share the page with. If you'd like your parent element to mimic the display properties of an inline element, use display:inline-flex. 
+> Note - `display: flex` gives your element Flexbox properties, but will allow it to be treated as a block-level element by all the other elements it share the page with. If you'd like your parent element to mimic the display properties of an inline element, use `display: inline-flex`. 
 
 Go ahead and add display: flex; to our flex-container.
 
