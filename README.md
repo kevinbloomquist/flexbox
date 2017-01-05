@@ -27,7 +27,7 @@ Before we start in on Flexbox, let's recap the CSS box model. It's main properti
 - Border*
 
 To make sure we still remember these, we're going to act them out. Half of the class will get a pad of post-its to write CSS properties on, and the other half has to act them out.
-> * *These might be hard to act out. Let's stick with the first 5 properties.
+> Note - Padding and Border might be hard to act out. Let's stick with the first 5 properties.
 
 If you have post-its, take two of them and write one CSS property/value on each. Hand each of your two post-its to a different person.
 
