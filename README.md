@@ -51,18 +51,8 @@ The Flexbox Model is a series of CSS rules that affect the two main components o
 		<li id="item-6" class="flex-item">6</li>
 	</ul>
 ```
-By default, the CSS Box Model allows you to control your child elements as a list - they can be arranged only in the order they appear in the DOM. With the Flexbox Model, you'll be able to rearrange your child elements along a grid, in any direction and order you wish, sorted either forward or backwards. The chart below details the names Flexbox uses to denote different positions along the grid - think of it like the nautical names for different sides of a ship (i.e. Port and Starboard):
-
-![Flexbox Orientation](https://cdn.css-tricks.com/wp-content/uploads/2011/08/flexbox.png)
-
-- **main axis** - The main axis of a flex container is the primary axis along which flex items are laid out.
-- **main-start | main-end** - The flex items are placed within the container starting from main-start and going to main-end.
-- **main size** - The full width of the main axis.
-- **cross axis** - The axis perpendicular to the main axis. 
-- **cross-start | cross-end** - Flex lines are filled with items and placed into the container starting on the cross-start side of the flex container and going toward the cross-end side.
-- **cross size** - The full height of the cross axis.
-
-Here, our unordered list "flex-container" is holding a collection of list items we'd like to arrange. From here, there's a number of CSS properties that we can apply to either our container or our children.
+By default, the CSS Box Model allows you to control your child elements as a list - they can be arranged only in the order they appear in the DOM. With the Flexbox Model, you'll be able to rearrange your child elements along a grid, in any direction and order you wish, sorted either forward or backwards. 
+In the above code, our unordered list `flex-container` is holding a collection of list items we'd like to arrange. From here, there's a number of CSS properties that we can apply to either our container or our children.
 
 ## Box Model Demo 
 
