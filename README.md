@@ -236,7 +236,7 @@ You'll be given 20 minutes to create your best Pinterest Grid, after which each 
 
 So now we have two different ways of laying out content on our sites - they can be used separately or combined in order to achieve the kind of pages we want.
 
-![Room for Activities](https://media.giphy.com/media/yrFrXTTTcHIY0/giphy.gif)
+![Room for Activities](gifs/activities.gif)
 
 1. How are children treated differently in the Flexbox Model? What are few abilities they gain?
 2. What are some of the Flexbox properties? What's the bare minimum amount of properties you can use to still have a Flexbox layout?
