@@ -202,7 +202,7 @@ Grab your browser window by the corner, and squish your screen (or use the mobil
 ## Living Box Model - Round 2
 
 Now that we've learned two different layout models, let's combine them!
-In our last lesson, half the class was handed a pad of post its to write CSS properties on, and the other half had to act them out. This time, we'll have two stacks of post-its - yellow for CSS Box Model, and blue for Flexbox Model. Please perform whatever role you didn't perform last round.
+In the begining of class, half the class was handed a pad of post its to write CSS properties on, and the other half had to act them out. This time, we'll have two stacks of post-its - one for CSS Box Model, and one for Flexbox Model. Please perform whatever role you didn't perform last round.
 
 ## Column Flow - Paired Practice 
 
