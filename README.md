@@ -60,7 +60,7 @@ Let's write some HTML we can come back to and use to visualize what we're talkin
 
 1. Create an new directory called flexbox-practice (or fork this repo)
 2. Create html page called index.html with an externally linked css stylesheet called main.css
-3. Inside your html page create a "flex-container" ul holding six list items within, with each next node numbered.
+3. Inside your html page create a "flex-container" `ul` holding six list items within, with each next node numbered.
 
 Your HTML should look something like this:
 
@@ -74,12 +74,12 @@ Your HTML should look something like this:
 	</head>
 	<body>
 		<ul class="flex-container">
-		  	<li id="item-1" class="flex-item">1</li>
-		  	<li id="item-2" class="flex-item">2</li>
-		 	<li id="item-3" class="flex-item">3</li>
-		  	<li id="item-4" class="flex-item">4</li>
-		  	<li id="item-5" class="flex-item">5</li>
-		  	<li id="item-6" class="flex-item">6</li>
+		  	<li id="child-1" class="flex-item">1</li>
+		  	<li id="child-2" class="flex-item">2</li>
+		 	<li id="child-3" class="flex-item">3</li>
+		  	<li id="child-4" class="flex-item">4</li>
+		  	<li id="child-5" class="flex-item">5</li>
+		  	<li id="child-6" class="flex-item">6</li>
 		</ul>
 	</body>
 	</html>
@@ -90,6 +90,8 @@ Your HTML should look something like this:
 ```css
 ul {
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 ul li {
 	padding: 14px;
