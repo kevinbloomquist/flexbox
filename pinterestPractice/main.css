@@ -10,3 +10,36 @@ ul {
 ul li {
 	padding: 0px;
 }
+
+li {
+	background-color: black;
+	margin:4px;
+	border-radius: 6px;
+}
+
+.flex-container{
+	display: flex;
+	flex-wrap:wrap;
+}
+
+img {
+	width:100%;
+}
+
+.description {
+	color:white;
+	padding: 6px 2px;
+
+}
+
+.item-tall {
+	flex-grow: 1;
+}
+
+.item-wide {
+	flex-grow: 1
+}
+
+.item-square {
+	flex-grow: 2;
+}
